@@ -1,11 +1,11 @@
-services:  
+services:
   mfp:
     build: https://github.com/mhdzumair/mediaflow-proxy.git#main
     container_name: mfp
     restart: unless-stopped
     ports:
-      - '8888:8888'
+      - "8888:8888"
     environment:
-      API_PASSWORD: Bizet4cindy
-      TRANSPORT_ROUTES: {"all://*.ichigotv.net": {"verify_ssl": false}, "all://ichigotv.net": {"verify_ssl": false}}
+      API_PASSWORD: "Bizet4cindy"
+      TRANSPORT_ROUTES: '{"all://*.ichigotv.net": {"verify_ssl": false}, "all://ichigotv.net": {"verify_ssl": false}}'
       FORWARDED_ALLOW_IPS: "*"

@@ -6,6 +6,5 @@ services:
     ports:
       - '8888:8888'
     environment:
-      API_PASSWORD: Bizet4cindy
+      API_PASSWORD: mfp
       FORWARDED_ALLOW_IPS: "*"
-      TRANSPORT_ROUTES: {"all://*.ichigotv.net": {"verify_ssl": false}, "all://ichigotv.net": {"verify_ssl": false}}
